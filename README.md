@@ -7,20 +7,19 @@ This is a simple python program to print pretty tables using the following 3 cha
 I find example code the easiest way to learn, so here's a simple program:
 ```
 import makeTable
-mytable = [[u'Apple',u'Banana'],[u'CÄT',u'Dóg'],[u'¡Eskimø!',u'Flówer']]
+mytable = [[u'apple',u'яблоко'],[u'löts øf spéçîàl chārãċţêrś',u'ouí'],[u'¡palabras!',u'¿preguntas?']]
 print(makeTable.drawTable(mytable).encode('utf-8'))
 ```
 
 Output:
 ```
-+--------+------+
-| Apple  |Banana|
-+--------+------+
-|  CÄT   | Dóg  |
-+--------+------+
-|¡Eskimø!|Flówer|
-+--------+------+
-
++--------------------------+-----------+
+|          apple           |  яблоко   |
++--------------------------+-----------+
+|löts øf spéçîàl chārãċţêrś|    ouí    |
++--------------------------+-----------+
+|        ¡palabras!        |¿preguntas?|
++--------------------------+-----------+
 
 ```
 
@@ -28,4 +27,4 @@ And that's pretty much it. `drawTable()` is the only function defined by `makeTa
 
 ## Notes
 
-So, as of now, this program only works in `python2`. Evidently `python3` handles unicode somewhat differently, but hopefully that'll be an easy fix.
+So, as of now, this program only works in `python2`. Evidently `python3` handles unicode somewhat differently, and I haven't bothered to figure it out yet and update this project.
