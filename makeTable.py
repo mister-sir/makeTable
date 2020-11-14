@@ -35,7 +35,7 @@ def drawTable(array):
 	colwidths = [0]*numCols
 	for r in range(0,numRows):
 		for c in range(0,numCols):
-			array[r][c] = unicode(array[r][c])
+			array[r][c] = str(array[r][c])
 			
 			cellLen = len(array[r][c])
 			if cellLen > colwidths[c]:
@@ -61,7 +61,7 @@ def drawTable(array):
 		row = '|' # reset the row so we can += again below
 		for c in range(0,numCols):
 			data = array[r][c] # Data to put in this cell
-			padding = ((colwidths[c] - len(data)) / 2)*' ' # Padding
+			padding = int((colwidths[c] - len(data)) / 2)*' ' # Padding
 			row += padding
 			row += data # add the data
 			# Add more padding to end

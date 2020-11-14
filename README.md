@@ -27,4 +27,4 @@ And that's pretty much it. `drawTable()` is the only function defined by `makeTa
 
 ## Notes
 
-So, as of now, this program only works in `python2`. Evidently `python3` handles unicode somewhat differently, and I haven't bothered to figure it out yet and update this project.
+Hey! I finally ported this to `python3`. Welcome to the future. ;)
